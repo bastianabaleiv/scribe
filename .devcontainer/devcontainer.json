@@ -1,0 +1,33 @@
+{
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "scribe",
+  "workspaceFolder": "/usr/workspace",
+  "customizations": {
+    "vscode": {
+        "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-toolsai.jupyter",
+    "ms-toolsai.jupyter-keymap",
+    "ms-toolsai.jupyter-renderers",
+    "vscode-icons-team.vscode-icons",
+    "github.copilot",
+          "mutantdino.resourcemonitor",
+    "enkia.tokyo-night",
+    "GitHub.copilot",
+    "redhat.vscode-yaml",
+    "DavidAnson.vscode-markdownlint",
+    "GrapeCity.gc-excelviewer",
+    "ms-azuretools.vscode-docker"
+  ],
+      "settings": {
+          "python.testing.pytestArgs": [
+              "."
+          ],
+          "python.testing.unittestEnabled": false,
+          "python.testing.pytestEnabled": true,
+          "python.formatting.provider": "black"
+      }
+    }
+}
+}
