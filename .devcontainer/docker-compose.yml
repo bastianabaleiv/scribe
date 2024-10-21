@@ -1,0 +1,17 @@
+services:
+  scribe:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    ports:
+      - "8888:8888"
+    volumes:
+      - ..:/usr/workspace
+    restart: always
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: 0
+            capabilities: [gpu]
